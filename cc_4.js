@@ -5,12 +5,12 @@ class Car {
     this.make = make;
     this.speed = speed;
   }
-// Method to accelerate the car
+// Method to accelerate the car.
   accelerate() {
     this.speed += 10;
     console.log(`${this.make} accelerated to ${this.speed} km/h`);
   }
-// Method to brake the car
+// Method to brake the car.
   brake() {
     this.speed -= 5;
     console.log(`${this.make} slowed down to ${this.speed} km/h`);
@@ -30,7 +30,7 @@ class EV extends Car {
     super(make, speed);
     this.charge = charge;
   }
-// Method to charge the battery to a specified level
+// Method to charge the battery to a specified level.
   chargeBattery(chargeTo) {
     this.charge = chargeTo;
     console.log(`${this.make} charged to ${this.charge}%`);
@@ -49,10 +49,10 @@ class EV extends Car {
     console.log(`${this.make} going at ${this.speed} km/h, with a charge of ${this.charge}%`);
   }
 }
-// Testing the EV class
+// Testing the EV class.
 const tesla = new EV('Tesla', 120, 23);
 
 // Test EV class methods with different operations.
-tesla.accelerate(); // This will adjust speed and charge
+tesla.accelerate(); // This will adjust speed and charge.
 tesla.brake();
 tesla.chargeBattery(50);
